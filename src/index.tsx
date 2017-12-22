@@ -5,9 +5,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('reactRoot') as HTMLElement
-);
+const reactRoot: HTMLElement = document.getElementById('reactRoot') as HTMLElement;
+const reactComponent: JSX.Element = <App />;
+
+ReactDOM.render(reactComponent, reactRoot);
 
 registerServiceWorker();
